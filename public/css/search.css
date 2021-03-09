@@ -1,0 +1,443 @@
+/************************sidebar***********************/
+.search .sidebar{
+    padding-right: 1rem!important;
+}
+.search .sidebar .card-header{
+    padding: .1rem!important;
+}
+.search .sidebar .card-header{
+ background-color: #343a40 !important;
+}
+.search .sidebar .card-header .btn-link{
+    position: relative;
+}
+.search .sidebar .card-header span {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline;
+    cursor: pointer;
+    padding:4px;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+.search .sidebar .card-header .btn-link.collapsed span {
+    transform: rotate(40deg) !important;
+    -webkit-transform: rotate(40deg)!important;
+    transition: .3s transform ease-in-out!important;
+}
+.search .sidebar .card-header .btn-link  span{
+    transform: rotate(-140deg);
+    -webkit-transform: rotate(-140deg);
+    transition: .3s transform ease-in-out;
+}
+.search .sidebar .btn-link:hover,.search .sidebar .btn-link:focus{
+    list-style: none;
+    text-decoration: none;
+}
+.search .sidebar .card-body ul li{
+    position: relative;
+}
+.search .sidebar .card-body .treePoint{
+    border: solid #6c757d;
+    border-width: 0 1px 1px 0;
+    display: inline;
+    cursor: pointer;
+    padding: 3px;
+    position: absolute;
+    left: -18px;
+    margin-top: 10px;
+    transform: rotate(-402deg);
+    -webkit-transform:rotate(-402deg);!important;
+
+}
+.brown{
+    color: #5f3008;
+}
+.search .sidebar .color .fa-square{
+    text-shadow: -1px 0 #6c757d, 0 1px #6c757d, 1px 0 #6c757d, 0 -1px #6c757d;
+    font-size: 12px;
+}
+/**********************EndSidebar*********************/
+/*********************Content************************/
+.resultSearchArrow .fa-chevron-right{
+    font-size: 9px;
+}
+.filterTop .fa-chevron-right{
+    font-size: 12px;
+}
+.filterTop .dropdown-toggle::after {
+    display: none;
+}
+.filterTop li{
+    position: relative;
+}
+.filterTop .title{
+    line-height: 36px;
+}
+.filterTop li .options{
+    min-width: 192px;
+    max-height: 194px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 36px;
+    left: 0;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0 4px 4px 0;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border-top: none!important;
+    overflow-y: auto;
+    display: none;
+}
+.filterTop .custom-control-label:before{
+    background-color:#fff;
+}
+.filterTop .custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color:darkred;
+    border:1px solid  #6c757d;
+}
+.filterTop .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
+    /*background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='darkred' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");*/
+    background-image: none!important;
+    background-color:darkred;
+    border-radius: 4px;
+}
+.filterTop .custom-control-input:active~.custom-control-label::before{
+    background-color:#6c757d;
+}
+
+/** focus shadow pinkish **/
+.filterTop .custom-checkbox .custom-control-input:focus~.custom-control-label::before{
+    box-shadow:none;
+}
+.filterSelected  .filter:hover,.filterSelected  .filter:focus{
+    cursor: inherit;
+}
+.filterSelected .filterClose{
+    cursor: pointer!important;
+}
+/*********Toggle Switch**********/
+.switchToggleSearch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-size: 14px;
+
+}
+
+.switchToggleSearch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.btnSliderToggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.btnSliderToggle:before {
+    position: absolute;
+    content: 'off';
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    text-align: center;
+    line-height: 24px;
+}
+
+input:checked + .btnSliderToggle {
+    background-color:#4CAF50;
+
+}
+input:focus + .btnSliderToggle {
+    box-shadow: 0 0 1px #4CAF50;
+}
+
+input:checked + .btnSliderToggle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    content:'on';
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Rounded sliders */
+.btnSliderToggle.round {
+    border-radius: 34px;
+}
+
+.btnSliderToggle.round:before {
+    border-radius: 50%;
+}
+/*******************End ToggleSwitch*********/
+/*************DisplayModeButton*************/
+.displayMode {
+    display: inline-block;
+    width: 185px;
+    border-radius: 0.4rem;
+    overflow: auto;
+    line-height: 35px;
+}
+
+.displayMode a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 26px;
+}
+.displayMode .borderRadius{
+    border-radius: 0.4rem 0 0 0.4rem;
+}
+.displayMode span{
+    float: left;
+    width: 50%;
+    font-size: 14px !important;
+}
+.displayMode a:hover {
+    background-color:#555;
+}
+
+.displayMode .active {
+    background-color: #4CAF50!important;
+}
+.displayMode a.bg-secondary:hover,.displayMode a.bg-secondary:focus,.displayMode button.bg-secondary:hover,.displayMode button.bg-secondary:focus {
+    background-color: #4CAF50!important;
+}
+/**************End display Mode******************/
+
+/******************pagination**************/
+.paginationSearch .page-item.active .page-link{
+    background-color: #4CAF50!important;
+    color: #555!important;
+    border-color: #4CAF50 !important;
+}
+.paginationSearch .page-link{
+color: #6c757d !important;
+}
+.paginationSearch ul li{
+
+}
+/******************End pagination**************/
+.products .row{
+    padding: 0!important;
+}
+.products ul li{
+    padding: 0.4rem !important
+}
+.products ul li .thumbnail{
+    position: relative;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1);
+}
+.products ul li .thumbnail a{
+    text-decoration: none!important;
+}
+.products .thumbnail:hover{
+   background-color:rgba(0, 0, 0, .1);
+    z-index: 3;
+}
+
+.products .thumbnail .img-fluid{
+
+}
+.products .shopping{
+    position: absolute !important;
+    bottom: 23px;
+    right: 8px;
+    padding: 0.2rem 0.3rem !important;
+}
+.products .fa-shopping-cart:before {
+    content: "\f07a";
+}
+.products .shopping .fa-shopping-cart{
+    font-size: 18px;
+}
+.products .colors .color{
+    text-shadow: -1px 0 #6c757d, 0 1px #6c757d, 1px 0 #6c757d, 0 -1px
+    #6c757d;
+    font-size: 12px;
+}
+.products .rating .checked{
+    color: orange;
+}
+.color .red{
+    color: red;
+}
+.color .blue{
+    color:blue;
+}
+.color .yellow{
+    color: yellow;
+}
+/******************Rating********************/
+.rating {
+    display: block;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.rating-wrap {
+    display: inline-block;
+    position: relative;
+    height: 19px;
+    font-size: 12px;
+}
+
+.rating .stars-active {
+    color: red;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.rating .stars-inactive {
+    color: grey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: initial;
+}
+.ratingText{
+    position: absolute;
+    right: 5px;
+}
+.products .prevCost,.prevCost .newCost{
+    margin-bottom: 0!important;
+}
+.products .prevCost{
+    display: inline-block;
+    position: relative;
+    font-size: 12px;
+}
+.products .prevCost:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 49%;
+    left: 0;
+    border-bottom: 1px solid #dc3545;
+}
+.products .newCost{
+    font-size: 12px;
+}
+
+/***************End Rating******************/
+/****************tringle with text**********/
+.products .tringle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-top: 50px solid #C00;
+    border-left: 50px solid transparent;
+}
+.products .mask-t {
+    color: #fff;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0;
+    top: 0;
+
+}
+.products  .mask-t strong {
+    display: block;
+    font-size: 12px;
+    width:100%;
+    height:100%;
+    line-height: 100px;
+    text-align: center;
+    -webkit-transform: rotate(47deg) translate(0, -50%);
+    -moz-transform: rotate(47deg) translate(0, -50%);
+    -ms-transform: rotate(47deg) translate(0, -50%);
+    -o-transform: rotate(47deg) translate(0, -50%);
+    transform: rotate(47deg) translate(0, -50%);
+}
+
+/***************change display of products when button click*************/
+.displayStyle ul{
+
+}
+.displayStyle ul li{
+    width: 100% !important;
+    flex: none !important;
+    max-width: 100% !important;
+    display: inline-block!important;
+}
+.displayStyle ul li .thumbnail a{
+
+}
+.displayStyle ul li .thumbnail{
+    display: inline-block!important;
+}
+.displayStyle ul li .right{
+    overflow:hidden!important;
+
+
+}
+.displayStyle ul li .right .complain{
+    display: block!important;
+    min-height: 189px;
+    font-size: 14px;
+    border-left: #ddd 1px solid;
+}
+.displayStyle ul li .left{
+    float: left!important;
+    width: 40%;
+}
+.displayStyle .DetailsBtn{
+    display: block!important;
+}
+.products .complain{
+    display: none!important;
+}
+.products .DetailsBtn{
+    display: none;
+}
+.products .ratingText{
+
+}
+.displayStyle .ratingText {
+    right: 46px!important;
+
+
+}
+
+/***************End change display of products*************/
+/*******************End Content*********************/

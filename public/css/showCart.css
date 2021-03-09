@@ -1,0 +1,13 @@
+.showCart .card-body table .image-size{
+    width: 60px;
+    height: 60px;
+}
+.showCart .card-body table .custom-select{
+    background-image: url('../image/svg/chevron-arrow-down.svg');
+    background-size: 9px;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+.showCart .card-body table .bg-red-light{
+    background-color: rgba(255, 0, 0, 0.2);
+}

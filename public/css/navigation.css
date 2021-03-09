@@ -1,0 +1,71 @@
+.navigation{
+    padding: .2rem 01rem!important;
+}
+.navigation .navbar-nav {
+    background-color: inherit;
+}
+.navigation .nav-item > a :hover,.navigation .nav-item > a :focus,
+.navigation .dropdown-menu > a:hover,.navigation .dropdown-menu > a:focus {
+    color: #272e2f;
+    text-decoration: none;
+    background-color: #abb2b3; /*change color of links in drop down here*/
+}
+.navigation .dropdown.show,.navigation .nav-item:hover,.navigation .nav-item:focus{
+    background-color: #fff!important;
+    border-radius:.2rem ;
+
+}
+.navigation .nav-item > a,.navigation .dropdown-menu > a{
+    color: #4e555b;
+}
+.navigation .dropdown-menu{
+    padding: 0!important;
+    border-top: 0!important;
+    background-color:#f8f9fa!important;
+    border-radius:0 0 .25rem .25rem!important;
+
+}
+.navigation .dropdown-item{
+    padding:0.56rem 1.5rem!important;
+}
+.navigation .dropdown{
+    position: inherit!important;
+}
+
+.navigation .nav-link {
+    padding-right: 2rem!important;
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(173, 176, 176);
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(173, 176, 176, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navigation {
+    margin: 0!important;
+}
+
+/*---------------------------------------------Responsive Regulation----------------------------------------------*/
+/* For mobile phones:
+/*[class*="classname"]{
+
+}
+*/
+[class*="navigation .dropdown-menu"] {
+    border:0!important;
+}
+@media only screen and (max-width:600px) {
+    .navigation .dropdown-menu{
+        border:0!important;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .navigation .dropdown-menu{
+       top:inherit!important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+}

@@ -1,0 +1,207 @@
+.userPanel .card-header .icon{
+    width:25px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 0.2rem;
+    position: relative;
+    margin-right: 4px;
+
+}
+.userPanel .card-header .icon::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.userPanel .card-header .userIcon{
+    background-color: #307caa;
+}
+.userPanel .card-header .userIcon::before{
+    border-top: 7px solid #307caa;
+}
+
+.userPanel .card-header .chartIcon{
+    background-color: darkred;
+}
+.userPanel .card-header .chartIcon::before{
+    border-top: 7px solid darkred;
+}
+.userPanel .card-header .icon .fa{
+    color: white;
+    position: absolute;
+    left: 0;
+    transform: translate(0, 30%);
+    right: 0;
+    font-size: 15px;
+}
+.userPanel .card-header .icon .fa-user{
+    transform: translate(0, 30%);
+}
+.userPanel .card-header .icon .fa-bar-chart{
+    transform: translate(-14%, 30%);
+}
+.userPanel .card-header .titleContent{
+    overflow: hidden;
+    display: inline-block;
+    width:calc(100% - 35px);
+
+}
+.userPanel .card-body ul li {
+    font-size: 14px;
+    cursor: initial !important;
+}
+.userPanel .card-body ul li span{
+    font-size: 12px;
+}
+/************************************Tab******************************/
+.userPanel .card .nav-link{
+    padding: 0.5rem 0.5rem!important;
+    font-size: 14px!important;
+}
+.userPanel .nav-tabs .nav-link {
+ border-radius: 0!important;
+}
+.userPanel .nav-tabs .nav-link.active,.userPanel .nav-tabs .nav-item.show .nav-link {
+    background-color:#cdcdcd!important;
+    border-color: #cdcdcd!important;
+
+
+}
+
+.userPanel .table td .fa-chevron-circle-down,.userPanel .table td .fa-chevron-circle-up{
+    font-size: 20px;
+    cursor: pointer;
+}
+.userPanel .detailsPanel{
+    display: none;
+}
+
+.userPanel .detailsPanel .subTable{
+    box-shadow: 0 0 5px #ccc;
+    background-color: #fff;
+
+}
+/*******************************Creating CSS3 Circles connected by lines********************************/
+.userPanel .order-steps .circle{
+    z-index: 0;
+    position: relative;
+}
+.userPanel .order-steps .circle li {
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    line-height: 5em;
+    border-radius: 5em;
+    background: dodgerblue;
+    margin: 0 2em !important;
+    display: inline-block;
+    color: white;
+    position: relative;
+}
+
+.userPanel .order-steps .circle li::before{
+    content: '';
+    position: absolute;
+    top: 2.3em;
+    left: -4.3em;
+    width: 4.3em;
+    height: .2em;
+    background: dodgerblue;
+    z-index: -1;
+}
+
+
+.userPanel .order-steps .circle li:first-child::before {
+    display: none;
+}
+
+.userPanel .order-steps  .active {
+    background: dodgerblue;
+}
+
+.userPanel .order-steps .active ~  li {
+    background: lightblue;
+}
+
+.userPanel .order-steps .active ~  li::before {
+    background: lightblue;
+}
+.userPanel .orderSituation{}
+
+/*******************************End Creating CSS3 Circles connected by lines***************************/
+.userPanel .favoriteList .list-group-item{
+    border: none!important;
+}
+.userPanel .favoriteList{
+    background: rgba(0, 0, 0, 0.03) !important;
+    padding: 0.8rem;
+}
+.userPanel .favoriteList li {
+    margin-right: 0.43rem !important;
+    border-radius: 0.25rem !important;
+    position: relative;
+}
+.userPanel .favoriteList li a{
+    font-size: 12px;
+
+}
+.userPanel .favoriteList li a .fa-edit{
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+.userPanel .favoriteList li a span{
+    font-size: 16px;
+}
+.userPanel .favoriteList li.activeList{
+ background-color: #dcdcdc;
+    border: 1px solid rgba(0, 0, 0, 0.125)!important;
+}
+.userPanel .favoriteList li.activeList .fa-edit{
+    display: block;
+}
+
+.userPanel .favoriteList li.activeList ~  li{
+    border: none;
+    background-color: inherit;
+}
+.userPanel .descriptionFavorite{
+ font-size: 14px;
+}
+.userPanel .descriptionTitle{
+    font-size: 16px;
+}
+.userPanel .fa-times-circle-o ,.userPanel .fa-edit{
+    cursor: pointer;
+}
+.userPanel .DetailsFavorite{
+    border: 1px solid #cdcdcd;
+    margin: 1rem 1px;
+
+}
+
+.userPanel .myComments .fa-eye ,.userPanel .myComments .fa-times-circle-o,.userPanel .myComments .fa-edit{
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.myTickets .fa-plus{
+    font-size:12px ;
+}
+/************************************End Tab**************************/
+
+
+
+@media only screen and (max-width:414px) {
+    .userPanel .card-body .btn-dark{
+        margin-bottom: 6px;
+    }
+}

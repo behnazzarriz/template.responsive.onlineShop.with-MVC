@@ -1,0 +1,32 @@
+.register,.login{
+padding-right: 0!important;
+padding-left: 0!important;
+}
+.register .list-group,.login .list-group{
+
+}
+.register .list-group li,.login .list-group li{
+    padding: 0.4rem !important;
+}
+.register .list-group li a,.login .list-group li a{
+    color: #6c757d;
+}
+.register .list-group li a:hover,
+.register .list-group li a:focus,
+.login .list-group li a:hover,
+.login .list-group li a:focus{
+    color: #42494a;
+}
+.register .fa-user{
+    font-size: 50px;
+}
+.register .fa-plus{
+    font-size: 30px;
+    margin-right: 4px;
+}
+.register .signin{
+    text-align: center;
+}
+.login .fa-lock{
+    font-size: 58px;
+}

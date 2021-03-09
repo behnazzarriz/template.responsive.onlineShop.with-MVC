@@ -1,0 +1,68 @@
+@font-face {
+    font-family:'Abel-Regular';
+    url('../font/Abel-Regular.ttf') format('ttf')
+    url('../font/Abel-Regular.eot?#iefix') format('eot')
+    url('../font/Abel-Regular.otf') format('otf')
+}
+@import url('fontawesome/css/font-awesome.min.css');
+body{
+    font-family: Abel-Regular;
+}
+body a{
+    cursor: pointer;
+}
+.navbar-brand .logo{
+    width: 100px!important;
+}
+.input-group.md-form.form-sm.form-1 input{
+    border: 1px solid #bdbdbd;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
+}
+.card-box{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: right;
+}
+.card-box .card-header{
+    padding: 0!important;
+    color: inherit;
+    background-color:inherit!important;
+    border-bottom: 0!important;
+}
+.card-box .card-body{
+    padding:4px 0 !important;
+}
+
+.card-box .fa-user,.card-box .fa-lock,.card-box .fa-search{
+    color: #4e555b;
+}
+.search .btn-success .fa-shopping-basket{
+ color: #fff;
+}
+.card-header .fa{
+    margin-left: 7px;
+}
+
+/*---------------------------------------------Responsive Regulation----------------------------------------------*/
+/* For mobile phones:
+/*[class*="classname"]{
+
+}
+*/
+
+@media only screen and (max-width:600px) {
+
+}
+@media only screen and (min-width: 600px) {
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+
+}
+

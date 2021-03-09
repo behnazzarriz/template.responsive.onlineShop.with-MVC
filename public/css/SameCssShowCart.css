@@ -1,0 +1,119 @@
+/*******************************Creating CSS3 Circles connected by lines********************************/
+.sameTimeOrder .order-steps .circle{
+    z-index: 0;
+    position: relative;
+}
+.sameTimeOrder .order-steps .circle li {
+    width: 5em;
+    height: 5em;
+    text-align: center;
+    line-height: 5em;
+    border-radius: 5em;
+    background:#28a745;
+    margin: 0 2em !important;
+    display: inline-block;
+    color: white;
+    position: relative;
+    font-size: 12px;
+}
+
+.sameTimeOrder .order-steps .circle li::before{
+    content: '';
+    position: absolute;
+    top: 2.3em;
+    left: -4.3em;
+    width: 4.3em;
+    height: .2em;
+    background: #28a745;
+    z-index: -1;
+}
+
+
+.sameTimeOrder .order-steps .circle li:first-child::before {
+    display: none;
+}
+.sameTimeOrder .order-steps  .active {
+    background:#28a745;
+}
+.sameTimeOrder .order-steps .active ~  li {
+    background: #7bca92;
+}
+.sameTimeOrder .order-steps .active ~ li::before {
+    background: #7bca92;
+}
+.sameTimeOrder .orderSituation{}
+/*******************************End Creating CSS3 Circles connected by lines***************************/
+.showCart2 .posCircle{
+    position: absolute;
+    top: 42%;
+    left: 29px;
+    right: 0;
+    margin: 0 auto;
+    display: inline-table;
+}
+.showCart2 .size-dt ,.showCart3 .size-dt,.showCart4 .size-dt{
+    min-width: 400px!important;
+}
+.showCart2 .sameDetails{
+    height: 5rem;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+.showCart2 .bg-edit{
+    background-color: rgba(0, 0, 255, 0.2);
+}
+.showCart2 .bg-delete{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.showCart2 .sameDetails .fa-edit,.showCart2 .sameDetails .fa-close{
+    position: absolute;
+    top: 36%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.showCart2 .sendingMethodDt ,.showCart3 .sendingMethodDt{
+    margin: 1.5rem 0.01rem;
+}
+.showCart2 .sendingMethodDt .custom-radio,.showCart3 .sendingMethodDt .custom-radio,.showCart4 .sendingMethodDt .chooseSendingMethod{
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25%;
+}
+
+.showCart2 .border-lightDt ,.showCart3 .border-lightDt,.showCart4 .border-lightDt{
+    border-right: 1px solid #dee2e6;
+}
+.showCart2 .border-lightDt .fa-truck,.showCart3 .border-lightDt .fa-truck{
+    margin-top: 13px;
+    margin-right: 18px;
+
+}
+.showCart2 .overflow-x{
+    overflow-x:auto ;
+}
+.showCart2 .custom-select{
+    background-image:url('../image/svg/chevron-arrow-down.svg');
+}
+.showCart2 .modal-footer{
+    display: inline-block!important;
+}
+.showCart4 .discountCode{
+    display: inline-block!important;
+    width: inherit!important;
+}
+.showCart4 .sendingMethodDt{
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+@media only screen and (max-width:1000px) {
+    .showCart2 .sameDetails{
+        height:6rem!important;
+
+    }
+
+
+}
